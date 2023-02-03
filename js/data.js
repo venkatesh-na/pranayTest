@@ -131,5 +131,15 @@ const data=[
         description:"Egg curry is a comforting Indian dish of curried eggs. It is basically made with hard boiled eggs, onions, tomatoes, whole & ground spices and herbs. Indian cuisine is very diverse and an egg curry is made in several ways, with recipes varying by state and even by family.",
     },
 
+    /*{
+        id: "p-14",
+        src:"",
+        name:"",
+        rating:"",
+        price:"",
+        category:"",
+        description:"",
+    },*/
+
 ]
 

@@ -1,4 +1,3 @@
-console.log(data);
 let preveiwContainer = document.querySelector('.products-preview');
 
 let productContainer = document.querySelector('.products-container');
