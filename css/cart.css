@@ -50,6 +50,7 @@
    .prices i{
     color:red;
    }
+
    @media screen and (max-width:500px){
     .title{
         font-size:18px

@@ -99,11 +99,13 @@ productContainer.innerHTML=tempData.map((product)=>{
     <div class="price">₹${price}/-</div>
     <div class="buttons">
        <a href="#" class="buy">buy now</a>
-       <a href="Cart.html?id=${id}" class="cart">add to cart</a>
+       <button class = "cart" data-id = ${id}>Add To Cart</button>
     </div>
  </div>`
   })
 
+
+{/* <a href="Cart.html?id=${id}" class="cart">add to cart</a> */}
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 document.querySelectorAll('.products-container .product').forEach(product =>{
   product.onclick = () =>{
@@ -119,6 +121,16 @@ document.querySelectorAll('.products-container .product').forEach(product =>{
 
   };
 });
+
+const allCartButton = document.querySelectorAll(".cart")
+console.log(allCartButton)
+allCartButton.forEach(btn=>{
+  btn.addEventListener("click",(e)=>{
+    console.log(e.target.dataset.id)
+    localStorage.setItem("id",e.target.dataset.id)
+    window.location.href = "http://127.0.0.1:5500/QR-Menu-Scanner/cart.html"
+  })
+})
 
 previewBox.forEach(close =>{
   close.querySelector('.fa-times').onclick = () =>{

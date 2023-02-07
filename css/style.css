@@ -207,7 +207,14 @@ body{
 .filter button:active{
    background-color: rgb(136, 136, 255);
 }
-
+.cart{
+   background: #444;
+   color: #fff;
+   flex: 1 1 16rem;
+   padding: 1rem;
+   font-size: 1.8rem;
+   border: 0.1rem solid #444;
+  }
 @media (max-width:991px){
 
    html{
